@@ -1,0 +1,103 @@
+/* Page 3 Styles */
+.page-3 {
+  /* Removed width and height as they're likely set by the body element */
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden; /* Consider using overflow-x: hidden if needed */
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 1.8rem; /* Adjust font size based on design system */
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+/* Responsive Text for Mobile Devices (Media Query) */
+@media screen and (max-width: 450px) {
+  .appele-galement-la-container {
+    font-size: var(--font-size-4xl); /* Consider using a heading tag (h2) here */
+    line-height: 1.5;
+  }
+}
+
+/* Content Container (Section) */
+.rectangle-parent {
+  position: absolute;
+  top: 166px;
+  left: 159px;
+  border-radius: var(--br-31xl);
+  border: 6px solid var(--color-lightblue);
+  box-sizing: border-box;
+  width: 100%; /* Removed fixed width for responsiveness */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 52px 21px 53px;
+  z-index: 1;
+}
+
+/* Content Area (Possibly a `figure` or `div`) */
+.rectangle-div {
+  height: 669px; /* Consider using a more descriptive class name */
+  width: 100%; /* Removed fixed width for responsiveness */
+  position: relative;
+  border-radius: var(--br-31xl);
+  border: 6px solid var(--color-lightblue);
+  box-sizing: border-box;
+  display: none;
+}
+
+/* Text Styles (Use Heading Tags for Importance) */
+.appele-galement-la,
+.blank-line,
+.blank-line1,
+.cette-espce-est,
+.les-araignes-de1 {
+  margin: 0;
+  /* Utilize heading tags (h2, h3, etc.) based on hierarchy */
+}
+
+/* Text Container (Possibly a `span` or `p`) */
+.appele-galement-la-container {
+  width: 100%; /* Removed fixed width for responsiveness */
+  position: relative;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  /* Consider using a more semantic element like `span` or `p` */
+  z-index: 2;
+}
+
+/* Language Icons (Possibly `figure` or `img`) */
+.language-icon1-12,
+.language-icon2-12,
+.language-icon3-12 {
+  position: absolute;
+  top: 420px;
+  left: 22px;
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Background Image (Possibly a `figure` or `img`) */
+.background-1-icon2 {
+  position: absolute;
+  top: -769px;
+  left: 0;
+  width: 100%; /* Removed fixed width for responsiveness */
+  height: auto; /* Use auto for proportional height */
+  object-fit: cover;
+}
+
+/* Child Element within Page 3 (More Specific Class) */
+.page-3-child {
+  position: absolute;
+  top: 268px;
+  left: 22px;
+  width: 57px;
+  height: 57px;
+  z-index: 1;
+}

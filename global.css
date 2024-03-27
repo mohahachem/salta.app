@@ -1,0 +1,44 @@
+/* Global Styles */
+body {
+  margin: 0;
+  line-height: 1; /* Normalize line-height for consistency */
+}
+
+/* Font Families */
+:root {
+  --font-family: var(--font-inter, Inter); /* Fallback for unsupported fonts */
+}
+
+/* Font Sizes */
+:root {
+  --font-size-h1: 43px; /* H1 Heading */
+  --font-size-h2: 26px;  /* H2 Heading */
+  --font-size-h3: 34px;  /* H3 Heading */
+  --font-size-body-large: 23px; /* Large Body Text */
+  --font-size-body-medium: 18px; /* Medium Body Text */
+  --font-size-body-small: 21px; /* Small Body Text (for emphasis) */
+}
+
+/* Colors */
+:root {
+  --color-white: #fff; /* White */
+  --color-light-blue: #bce6f6; /* Light Blue */
+}
+
+/* Spacing */
+:root {
+  --spacing-xl: 20px; /* Extra Large Spacing */
+  --spacing-xs: 10px;  /* Extra Small Spacing */
+}
+
+/* Padding */
+:root {
+  --padding-xl: 20px; /* Extra Large Padding */
+  --padding-xxl: 35px; /* Very Large Padding */
+}
+
+/* Border Radius */
+:root {
+  --border-radius-sm: 12px; /* Small Border Radius */
+  --border-radius-lg: 50px; /* Large Border Radius */
+}

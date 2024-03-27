@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrapper Page - Monde Marin</title>
+  <link rel="shortcut icon" href="image1.png">
+  <style>
+    /* ---- Styles globaux ---- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ---- Conteneur principal ---- */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+      color: white; /* Texte blanc pour une meilleure lisbilité */
+    }
+
+    .content img {
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      margin: 10px;
+      border: 2px solid white;
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 29px;
+    }
+
+    /* ---- Section Images ---- */
+    .image-section {
+      display: flex; /* Disposition flexible */
+      flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante */
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; /* Espacement après les images */
+    }
+
+    .image-section img {
+      width: 30%; /* Largeur ajustable pour une mise en page responsive */
+      height: auto;
+      margin: 5px;
+    }
+
+    /* ---- Section des icônes de langue ---- */
+    .language-icons {
+      position: fixed;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .language-icons section {
+      margin-bottom: 10px; /* Espacement entre les icônes */
+    }
+
+    .language-icons figure { /* Contenu isolé avec `figure` */
+      display: flex;
+      align-items: center;
+    }
+
+    .language-icons figure img {
+      width: 50px;
+      height: auto;
+      margin-right: 5px; /* Espacement entre l'icône et le texte */
+    }
+
+    .language-icons figure figcaption {
+      font-size: 14px; /* Taille de police plus petite pour les langues */
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <section class="content">
+      <section class="image-section">
+        <figure>
+          <a href="page2.html"><img src="image1.png" alt="Image 1"></a>
+          <figcaption>ARAIGNÉE DE MER</figcaption>
+        </figure>
+        <figure>
+          <img src="image2.png" alt="Image 2">
+          <figcaption>ANÉMONE DE MER VERTE</figcaption>
+        </figure>
+      </section>
+      <h2 class="title">Explorez le monde marin</h2>
+    </section>
+  </section>
+
+  <section class="language-icons">
+    <section>
+      <a href="change_language1"><img src="language-icon1.png" alt="Langue 1"></a>
+      <figcaption>Langue 1</figcaption>
+    </section>
+    <section>
+      <a href="change_language2"><img src="language-icon2.png" alt="Langue 2"></a>
+      <figcaption>Langue 2</figcaption>
+    </

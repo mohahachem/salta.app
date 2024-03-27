@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container and Content (Section & Article) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White text for better readability */
+}
+
+.content img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.title { /* Article heading */
+  margin-top: 10px;
+  font-size: 29px;
+}
+
+/* Images Section (Figure & Figcaption) */
+.image-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to next line */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing after images */
+}
+
+.image-section img {
+  width: 30%; /* Adjust width for responsive layout */
+  height: auto;
+  margin: 5px;
+}
+
+/* Language Icons (Aside & Navigation) */
+.language-icons {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.language-icons section { /* Navigation list items */
+  margin-bottom: 10px; /* Spacing between icons */
+}
+
+.language-icons figure { /* Use `figure` for isolated content */
+  display: flex;
+  align-items: center;
+}
+
+.language-icons figure img {
+  width: 50px;
+  height: auto;
+  margin-right: 5px; /* Spacing between icon and text */
+}
+
+.language-icons figure figcaption {
+  font-size: 14px; /* Smaller text size for language labels */
+}
+
+/* Responsive Styles (Media Queries) */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .content {
+    padding: 15px;
+  }
+  .content img {
+    width: 300px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .language-icons {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for extra small screens here */
+  .content {
+    padding: 10px;
+  }
+  .content img {
+    width: 250px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .language-icons {
+    display: none; /* Hide icons on very small screens (optional) */
+  }
+}
